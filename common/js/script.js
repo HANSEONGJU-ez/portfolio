@@ -187,7 +187,6 @@ var commonScript = (function(){
       $(".list_pop .pop_wrap .btn_close").on("click", function(){
         $(this).parents(".list_pop").fadeOut(300, function(){
           $(".list_pop .view_site").show();
-          $(".list_pop .con_txt .txt:nth-child(2)").remove();
           $(".list_pop .img img").attr("src", "")
         });
         $("body").removeClass("stop_scroll");

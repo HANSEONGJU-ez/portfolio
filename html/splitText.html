@@ -27,9 +27,9 @@
 		<style>
 			.split-text{display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 60px; width:100%; height:100vh; background:#000;}
 			.split-text .text{width:700px; color:#fff; font-size:60px; font-family: "Pretendard_Medium"; text-align:center;}
-			.split-text .btn-wrap{display:flex; align-items:center; justify-content:center;}
-			.split-text .btn-list{display:flex; flex-direction:column; align-items:center; justify-content:center;}
-			.split-text .button{width:200px; height:50px; background:#fff; color:#000; font-size:20px; font-family: "Pretendard_Medium"; text-align:center; border-radius:10px; margin:10px;}
+			.split-text .btn-wrap{display:flex; align-items:center; justify-content:center; flex-direction: column; width:700px;}
+			.split-text .btn-list{display:flex; align-items:center; justify-content:center; width:100%;}
+			.split-text .button{flex:1; height:50px; background:#fff; color:#000; font-size:20px; font-family: "Pretendard_Medium"; text-align:center; border-radius:10px; margin:10px;}
 			.split-text .split-line{overflow:hidden;}
 		</style>
 	</head>
@@ -39,6 +39,7 @@
 				<div class="btn-list">
 					<button id="chars-x" class="button">Characters-x</button>
 					<button id="chars-y" class="button">Characters-y</button>
+					<button id="chars-scale" class="button">Characters-scale</button>
 				</div>
 				<div class="btn-list">
 					<button id="words-x" class="button">Words-x</button>
@@ -86,6 +87,25 @@
 			})
 		});
 
+		document.querySelector("#chars-scale").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+			gsap.from(split.chars, {
+				duration: 3,
+				opacity: 0,
+				scale: 0,
+				y: 80,
+				rotationX: 180,
+				transformOrigin: "0% 50% -50",
+				ease: "back",
+				stagger: 0.05,
+				onComplete: () => {
+					document.querySelector(".text").removeAttribute("aria-hidden");
+				}
+			})
+		});
+
 		document.querySelector("#words-x").addEventListener("click", () => {
 			gsap.killTweensOf(split.chars);
 			gsap.killTweensOf(split.words);
@@ -93,7 +113,7 @@
 			gsap.from(split.words, {
 				x: -100,
 				opacity: 0,
-				rotation: "random(-80, 80)",
+				rotation: "random(-80, 80)", // 랜덤으로 회전되면서 올라옴
 				duration: 0.7, 
 				ease: "back",
 				stagger: 0.15

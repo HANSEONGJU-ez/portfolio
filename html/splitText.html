@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Portfolio</title>
+    <link rel="shortcut icon" href="https://raw.githack.com/Hseongju/portfolio/main/common/images/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+		<meta property="og:site_name" content="" id="og-sitename-value"/>
+		<meta property="og:type" content="website" id="og-type-value"/>
+		<meta property="og:url" content="URL" id="og-url-value"/>
+		<meta property="og:title" content="" id="og-title-value"/>
+		<meta property="og:description" content="" id="og-description-value"/>
+		<meta property="og:image" content="img URL" id="og-image-value"/>
+		<link rel="stylesheet" href="https://raw.githack.com/Hseongju/portfolio/main/common/css/swiper.css" />
+		<link rel="stylesheet" href="https://raw.githack.com/Hseongju/portfolio/main/common/css/fonts.css" />
+		<link rel="stylesheet" href="https://raw.githack.com/Hseongju/portfolio/main/common/css/common.css" />
+		<script type="text/javascript" src="../common/js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../common/js/gsap.min.js"></script>
+		<script type="text/javascript" src="../common/js/gsap.splitText.min.js"></script>
+		<script type="text/javascript" src="../common/js/ScrollTrigger.min.js"></script>
+		<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="https://raw.githack.com/Hseongju/portfolio/main/common/js/script.js"></script> -->
+
+		<style>
+			.split-text{display:flex; flex-direction:column; align-items:center; justify-content:center; gap: 60px; width:100%; height:100vh; background:#000;}
+			.split-text .text{width:700px; color:#fff; font-size:60px; font-family: "Pretendard_Medium"; text-align:center;}
+			.split-text .btn-wrap{display:flex; align-items:center; justify-content:center;}
+			.split-text .btn-list{display:flex; flex-direction:column; align-items:center; justify-content:center;}
+			.split-text .button{width:200px; height:50px; background:#fff; color:#000; font-size:20px; font-family: "Pretendard_Medium"; text-align:center; border-radius:10px; margin:10px;}
+			.split-text .split-line{overflow:hidden;}
+		</style>
+	</head>
+	<body>
+    <div id="wrap" class="split-text">
+			<div class="btn-wrap">
+				<div class="btn-list">
+					<button id="chars-x" class="button">Characters-x</button>
+					<button id="chars-y" class="button">Characters-y</button>
+				</div>
+				<div class="btn-list">
+					<button id="words-x" class="button">Words-x</button>
+					<button id="words-y" class="button">Words-y</button>
+				</div>
+				<div class="btn-list">
+					<button id="lines-x" class="button">Lines-x</button>
+					<button id="lines-y" class="button">Lines-y</button>
+				</div>
+			</div>
+			<div class="text">
+				Break apart HTML text into characters, words, and/or lines for easy animation.
+			</div>
+    </div>
+	</body>
+
+	<script>
+		gsap.registerPlugin(SplitText);
+
+		let split;
+
+		document.querySelector("#chars-x").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+			gsap.from(split.chars, {
+				x: 100,
+				opacity: 0,
+				duration: 0.7, 
+				ease: "power4",
+				stagger: 0.04
+			})
+		});
+
+		document.querySelector("#chars-y").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+			gsap.from(split.chars, {
+				y: 50,
+				opacity: 0,
+				duration: 0.7, 
+				ease: "power4",
+				stagger: 0.04
+			})
+		});
+
+		document.querySelector("#words-x").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+			gsap.from(split.words, {
+				x: -100,
+				opacity: 0,
+				rotation: "random(-80, 80)",
+				duration: 0.7, 
+				ease: "back",
+				stagger: 0.15
+			})
+		});
+
+		document.querySelector("#words-y").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+			gsap.from(split.words, {
+				y: 50,
+				opacity: 0,
+				rotation: "random(-80, 80)",
+				duration: 0.7, 
+				ease: "back",
+				stagger: 0.15
+			})
+		});
+
+		document.querySelector("#lines-x").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+			gsap.from(split.lines, {
+				x: -100,
+				transformOrigin: "50% 50% -160px",
+				opacity: 0,
+				duration: 0.8, 
+				ease: "power3",
+				stagger: 0.25
+			})
+		});
+
+		
+
+		document.querySelector("#lines-y").addEventListener("click", () => {
+			gsap.killTweensOf(split.chars);
+			gsap.killTweensOf(split.words);
+			gsap.killTweensOf(split.lines);
+
+			split.revert(); // 기존 split 인스턴스 제거 (안쓰면 계속 타고타고로 중복되서 생성됨.)
+    
+			// 새로운 split 객체 생성 (mask 효과 포함)
+			split = SplitText.create(".text", {
+				linesClass: "split-line",
+				autoSplit: true,
+				mask: "lines", // 마스크 효과
+			});
+
+			gsap.from(split.lines, {
+				duration: 1.6,
+				yPercent: 100,
+				opacity: 0,
+				stagger: 0.4,
+				ease: "expo.out"
+			});
+		});
+
+		function setup() {
+			// split && split.revert();
+			split = SplitText.create(".text", {type:"chars,words,lines"});
+		}
+		setup();
+		window.addEventListener("resize", setup);
+	</script>
+</html>

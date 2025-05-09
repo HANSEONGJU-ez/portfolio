@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Portfolio</title>
+    <link rel="shortcut icon" href="https://raw.githack.com/Hseongju/portfolio/main/common/images/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+		<meta property="og:site_name" content="" id="og-sitename-value"/>
+		<meta property="og:type" content="website" id="og-type-value"/>
+		<meta property="og:url" content="URL" id="og-url-value"/>
+		<meta property="og:title" content="" id="og-title-value"/>
+		<meta property="og:description" content="" id="og-description-value"/>
+		<meta property="og:image" content="img URL" id="og-image-value"/>
+		<link rel="stylesheet" href="https://raw.githack.com/Hseongju/portfolio/main/common/css/swiper.css" />
+		<link rel="stylesheet" href="https://raw.githack.com/Hseongju/portfolio/main/common/css/fonts.css" />
+		<link rel="stylesheet" href="https://raw.githack.com/Hseongju/portfolio/main/common/css/common.css" />
+		<script type="text/javascript" src="../common/js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../common/js/gsap.min.js"></script>
+		<script type="text/javascript" src="../common/js/gsap.draggable.min.js"></script>
+		<script type="text/javascript" src="../common/js/gsap.inertia.min.js"></script>
+		<script type="text/javascript" src="../common/js/ScrollTrigger.min.js"></script>
+		<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="https://raw.githack.com/Hseongju/portfolio/main/common/js/script.js"></script> -->
+
+		<style>
+			#wrap{display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:100vh; background:#000;}
+			.draggable-wrap{display:flex; align-items:center; justify-content:center; gap: 20px; position:relative; width:600px; height:500px; border:1px solid #fff;}
+			.wrapper{position:relative;}
+			.drag-box{display:flex; align-items:center; justify-content:center; width:70px; height:70px; color:#fff; font-size:15px; font-family: "Pretendard_Medium"; text-align:center; border:1px solid #fff;}
+
+			.scroll-div{overflow-x:auto !important; overflow-y:hidden; position:relative; padding-bottom:18px; width:500px; height:200px;}
+			.scroll-div::-webkit-scrollbar{width:100%; height:12px; background:#F5F6F7;}
+			.scroll-div::-webkit-scrollbar-thumb{background:#C6CCD1;}
+			.scroll-div .scroll-box{display: flex; position:relative; width:1200px; height:100%;}
+			.scroll-div .box{width:200px; height:200px;}
+			.scroll-div .box:nth-child(1){background:red}
+			.scroll-div .box:nth-child(2){background:orange}
+			.scroll-div .box:nth-child(3){background:yellow}
+			.scroll-div .box:nth-child(4){background:green}
+			.scroll-div .box:nth-child(5){background:blue}
+			.scroll-div .box:nth-child(6){background:purple}
+		</style>
+	</head>
+	<body>
+    <div id="wrap">
+			<div class="draggable-wrap">
+				<div class="wrapper">
+					<p class="drag-x drag-box">Drag X</p>
+				</div>
+				<div class="wrapper">
+					<p class="drag-y drag-box">Drag Y</p>
+				</div>
+				<div class="wrapper">
+					<p class="drag-rotate drag-box">Drag Rotate</p>
+				</div>
+				<div class="wrapper">
+					<p class="drag-event drag-box">Drag event</p>
+				</div>
+				<div class="wrapper">
+					<p class="drag-snap drag-box">Drag snap</p>
+				</div>
+			</div>
+
+			<div class="scroll-div">
+				<div class="scroll-box">
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+				</div>
+			</div>
+    </div>
+	</body>
+
+	<script>
+		gsap.registerPlugin(Draggable, InertiaPlugin) 
+
+		Draggable.create(".drag-x", {
+			type: "x",
+			bounds: ".draggable-wrap"
+		});
+
+		Draggable.create(".drag-y", {
+			type: "y",
+			bounds: ".draggable-wrap"
+		});
+
+		Draggable.create(".drag-rotate", {
+			type: "rotation",
+			inertia: true
+		});
+
+		Draggable.create(".drag-event", {
+			type: "xy",
+			bounds: ".draggable-wrap",
+			onDragStart: function() {
+				$(".drag-event").text("Drag Start!!");
+			},
+			onDragEnd: function() {
+				$(".drag-event").text("Drag End!!");
+			}
+		});
+
+		Draggable.create(".drag-snap", {
+			type: "x,y",
+			snap: function(endValue) {
+				return Math.round(endValue / 50) * 50; // 50px 단위로 반올림
+			},
+			bounds: ".draggable-wrap",
+			inertia: true,      // 관성 효과 추가
+			snapPrecision: 10,  // 스냅 민감도를 더 높임
+			liveSnap: true,
+		});
+
+		Draggable.create(".scroll-div", {
+			type: "scroll-x",
+			cursor:"auto",
+			inertia: true,
+			throwResistance: 3000,
+		});
+	</script>
+</html>

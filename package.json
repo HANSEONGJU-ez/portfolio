@@ -2,5 +2,8 @@
   "devDependencies": {
     "stylelint": "^15.6.1",
     "stylelint-config-standard": "^33.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^22.15.17"
   }
 }

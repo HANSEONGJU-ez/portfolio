@@ -200,11 +200,10 @@ section .tab_con_area .list_wrap .list_div .list .img_area.no_img img {width: 80
 section .tab_con_area .list_wrap .list_div .list .txt_div {padding: 40px 0; width: 100%; height: 210px; transition: height .5s ease;}
 section .tab_con_area .list_wrap .list_div .list .txt_div .tit {margin-top: 13px; font-size: 28px; font-family: "Pretendard_Semibold", sans-serif; color: #fff;}
 section .tab_con_area .list_wrap .list_div .list .txt_div .tit span {position: relative; z-index: 1;}
-/* section .tab_con_area .list_wrap .list_div .list .txt_div .tit span:after{display:block; content:""; position:absolute; top:0; left:0; width:0; height:100%; transform: skew(-15deg); transition:width 0.5s ease; z-index:-1; opacity:0.5;  background:#75c8cc} */
-section .tab_con_area .list_wrap .list_div .list .txt_div .txt {margin-top: 10px; font-size: 16px; font-family: "Pretendard_Medium", sans-serif; color: rgba(255, 255, 255, .8);}
-section .tab_con_area .list_wrap .list_div .list .txt_div .view {position: absolute; bottom: 0; left: 0; opacity: 0; color: #fff; font-size: 14px; transition: bottom .5s ease, opacity .5s ease;}
+section .tab_con_area .list_wrap .list_div .list .txt_div .txt {position: relative; padding-left: 20px; margin-top: 10px; font-size: 16px; font-family: "Pretendard_Medium", sans-serif; color: #fff;}
+section .tab_con_area .list_wrap .list_div .list .txt_div .txt:before {display: block; content: "✔"; position: absolute; top: 0; left: 0;}
+section .tab_con_area .list_wrap .list_div .list .txt_div .view {position: absolute; bottom: 0; left: 0; opacity: 0; color: rgba(255, 255, 255, .8); font-size: 14px; transition: bottom .5s ease, opacity .5s ease;}
 section .tab_con_area .list_wrap .list_div .list:hover .list_w {top: -10px;}
-/* section .tab_con_area .list_wrap .list:hover .txt_div{height:180px;} */
 section .tab_con_area .list_wrap .list_div .list:hover .txt_div .view {bottom: 20px; opacity: 1;}
 section .tab_con_area .list_wrap .list_div .list:hover .txt_div .tit span:after {width: 100%;}
 section .tab_con_area .list_wrap .txt_list_div {margin: 100px 50px 0 0; width: calc((100% - 100px) / 3); width: -webkit-calc((100% - 100px) / 3);}
@@ -223,11 +222,11 @@ section .tab_con_area .list_wrap .txt_list_div:hover .list .list_w {top: -10px; 
 section .tab_con_area .list_wrap .txt_list_div .tit {color: #fff; font-size: 28px; line-height: 33px; font-family: "Pretendard_Semibold", sans-serif;}
 section .tab_con_area .list_wrap .txt_list_div .view {margin-top: 24px; color: #2eb7bd; font-size: 20px; line-height: 24px; font-family: "Pretendard_Medium", sans-serif;}
 section .label_div {display: flex; flex-wrap: wrap;}
-section .label_div .label {margin-right: 5px; padding: 5px 20px 4px; color: #fff; font-size: 16px; font-family: "Pretendard_Regular", sans-serif; background: #06a4ab; border-radius: 15px;}
+section .label_div .label {display: flex; align-items: center; justify-content: center; margin-right: 5px; padding: 5px 20px 4px; color: #fff; font-size: 16px; font-family: "Pretendard_Regular", sans-serif; background: #06a4ab; border-radius: 15px;}
 section .label_div .label.pc {background: #569cc7;}
 section .label_div .label.mobile {background: #316bc6;}
 section .label_div .label.no_show {background: #8a0606;}
-section .label_div .label.position {position: relative; margin-left: 20px; background: #00a123;}
+section .label_div .label.position {position: relative; margin-left: 20px; background: #00a123; border: 2px solid #a8ffb6;}
 section .label_div .label.position:after {display: block; content: ""; position: absolute; left: -15px; top: 50%; transform: translateY(-50%); width: 3px; height: 3px; background: #fff; border-radius: 50%;}
 
 /* 팝업 */

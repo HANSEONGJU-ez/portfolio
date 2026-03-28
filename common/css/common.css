@@ -222,7 +222,7 @@ section .tab_con_area .list_wrap .txt_list_div:hover .list .list_w {top: -10px; 
 section .tab_con_area .list_wrap .txt_list_div .tit {color: #fff; font-size: 28px; line-height: 33px; font-family: "Pretendard_Semibold", sans-serif;}
 section .tab_con_area .list_wrap .txt_list_div .view {margin-top: 24px; color: #2eb7bd; font-size: 20px; line-height: 24px; font-family: "Pretendard_Medium", sans-serif;}
 section .label_div {display: flex; flex-wrap: wrap;}
-section .label_div .label {display: flex; align-items: center; justify-content: center; margin-right: 5px; padding: 5px 20px 4px; color: #fff; font-size: 16px; font-family: "Pretendard_Regular", sans-serif; background: #06a4ab; border-radius: 15px;}
+section .label_div .label {display: flex; align-items: center; justify-content: center; margin-right: 5px; padding: 5px 15px 4px; color: #fff; font-size: 16px; font-family: "Pretendard_Regular", sans-serif; background: #06a4ab; border-radius: 17px;}
 section .label_div .label.pc {background: #569cc7;}
 section .label_div .label.mobile {background: #316bc6;}
 section .label_div .label.no_show {background: #8a0606;}

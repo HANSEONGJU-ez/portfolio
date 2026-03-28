@@ -124,7 +124,7 @@ body.lock {position: fixed; width: 100%;}
 section .big_title {position: relative; top: 80px; text-align: center; font-size: 80px; line-height: 1; font-family: "Pretendard_Bold", sans-serif; opacity: 0; transition: top .9s ease, opacity .9s ease;}
 section .big_title span {position: relative;}
 section .big_title span:after {display: block; content: ""; position: absolute; top: 6px; right: -28px; width: 16px; height: 16px; background: #2eb7bd; border-radius: 50%;}
-section .sub_tit {position: relative; top: 80px; margin-top: 24px; text-align: center; font-size: 20px; line-height: 24px; opacity: 0; transition: top .9s ease, opacity .9s ease;}
+section .sub_tit {position: relative; top: 80px; margin-top: 40px; text-align: center; font-size: 20px; line-height: 30px; opacity: 0; transition: top .9s ease, opacity .9s ease;}
 section.active .big_title {top: 0; opacity: 1;}
 section.active .sub_tit {top: 0; opacity: 1; transition-delay: .1s;}
 
@@ -201,10 +201,11 @@ section .tab_con_area .list_wrap .list_div .list .txt_div {padding: 40px 0; widt
 section .tab_con_area .list_wrap .list_div .list .txt_div .tit {margin-top: 13px; font-size: 28px; font-family: "Pretendard_Semibold", sans-serif; color: #fff;}
 section .tab_con_area .list_wrap .list_div .list .txt_div .tit span {position: relative; z-index: 1;}
 /* section .tab_con_area .list_wrap .list_div .list .txt_div .tit span:after{display:block; content:""; position:absolute; top:0; left:0; width:0; height:100%; transform: skew(-15deg); transition:width 0.5s ease; z-index:-1; opacity:0.5;  background:#75c8cc} */
-section .tab_con_area .list_wrap .list_div .list .txt_div .view {position: absolute; bottom: 0; left: 0; opacity: 0; color: #fff; transition: bottom .5s ease, opacity .5s ease;}
+section .tab_con_area .list_wrap .list_div .list .txt_div .txt {margin-top: 10px; font-size: 16px; font-family: "Pretendard_Medium", sans-serif; color: rgba(255, 255, 255, .8);}
+section .tab_con_area .list_wrap .list_div .list .txt_div .view {position: absolute; bottom: 0; left: 0; opacity: 0; color: #fff; font-size: 14px; transition: bottom .5s ease, opacity .5s ease;}
 section .tab_con_area .list_wrap .list_div .list:hover .list_w {top: -10px;}
 /* section .tab_con_area .list_wrap .list:hover .txt_div{height:180px;} */
-section .tab_con_area .list_wrap .list_div .list:hover .txt_div .view {bottom: 30px; opacity: 1;}
+section .tab_con_area .list_wrap .list_div .list:hover .txt_div .view {bottom: 20px; opacity: 1;}
 section .tab_con_area .list_wrap .list_div .list:hover .txt_div .tit span:after {width: 100%;}
 section .tab_con_area .list_wrap .txt_list_div {margin: 100px 50px 0 0; width: calc((100% - 100px) / 3); width: -webkit-calc((100% - 100px) / 3);}
 section .tab_con_area .list_wrap .txt_list_div:nth-child(3n) {margin-right: 0;}
@@ -273,7 +274,7 @@ footer .copyright {margin-top: 15px;}
 @media screen and (max-width:1280px) {
   .visual_area .visual_div .tit_motion {width: 90%;}
   .visual_area .visual_div .visual_tit span {font-size: 80px;}
-  .visual_area .visual_div .visual_txt {margin-top: 30px; font-size: 20px; line-height: 30px;}
+  .visual_area .visual_div .visual_txt {margin-top: 32px; font-size: 20px; line-height: 30px;}
   .visual_area .visual_div .control_area {right: 30px;}
 
   section .tools_list {width: 100%;}
@@ -300,7 +301,7 @@ footer .copyright {margin-top: 15px;}
   section .tab_con_area .list_wrap .list_div:nth-child(2n) {margin-right: 0;}
   section .tab_con_area .list_wrap .list_div:nth-child(3) {margin-top: 50px;}
   section .tab_con_area .list_wrap .list_div .list:hover .list_w {top: 0;}
-  section .tab_con_area .list_wrap .list_div .list .txt_div .view {bottom: 30px; opacity: 1;}
+  section .tab_con_area .list_wrap .list_div .list .txt_div .view {bottom: 0; opacity: 1;}
   section .tab_con_area .list_wrap .txt_list_div {width: calc((100% - 50px) / 2); width: -webkit-calc((100% - 50px) / 2);}
   section .tab_con_area .list_wrap .txt_list_div:nth-child(3n) {margin-right: 50px;}
   section .tab_con_area .list_wrap .txt_list_div:nth-child(2n) {margin-right: 0;}
@@ -310,33 +311,34 @@ footer .copyright {margin-top: 15px;}
 }
 
 @media screen and (max-width:768px) {
-  .visual_area .visual_div .tit_motion {left: 5%; transform: translate(0, -50%); width: 300px; text-align: left;}
+  .visual_area .visual_div .tit_motion {left: 5%; transform: translate(0, -50%); width: 320px; max-width: 80%; text-align: left;}
   .visual_area .visual_div .visual_tit span {font-size: 40px;}
   .visual_area .visual_div .visual_tit span:last-child {padding-right: 10px;}
   .visual_area .visual_div .visual_tit span:last-child:after {top: 5px; width: 10px; height: 10px;}
-  .visual_area .visual_div .visual_txt {margin-top: 20px; font-size: 16px; line-height: 26px;}
+  .visual_area .visual_div .visual_txt {margin-top: 24px; font-size: 16px; line-height: 26px;}
   .visual_area .visual_div .control_area {right: 5%;}
   .visual_area .visual_div .progress_bar {margin: 10px 0; height: 100px;}
 
   section .big_title {font-size: 40px;}
   section .big_title span:after {right: -15px; width: 10px; height: 10px;}
-  section .sub_tit {margin-top: 12px; font-size: 16px;}
+  section .sub_tit {margin-top: 24px; font-size: 16px; line-height: 26px;}
 
   section.tools_div {padding: 110px 0 120px;}
   section .tools_list {margin: 50px auto 0;}
   section .tools_list .tools .icon img {width: 60px;}
 
-  section.portfolio {padding: 120px 0;}
+  section.portfolio {padding: 120px 0; background: linear-gradient(to bottom, #1d1d1d 96%, #fff 100%);}
   section .tab_func_area {margin-top: 60px;}
   section .tab_btn_area .btn {padding: 10px 20px; font-size: 20px;}
   section .tab_btn_area .btn.on:after {width: calc(100% - 30px); width: -webkit-calc(100% - 30px);}
   section .tab_con_area {margin-top: 60px;}
-  section .tab_con_area .list_wrap .list_div {margin: 20px 0 0 0; width: 100%;}
+  section .tab_con_area .list_wrap .list_div {margin: 40px 0 0 0; width: 100%;}
   section .tab_con_area .list_wrap .list_div:nth-child(3n) {margin-right: 0;}
-  section .tab_con_area .list_wrap .list_div:nth-child(1), section .tab_con_area .list_wrap .list_div:nth-child(2), section .tab_con_area .list_wrap .list_div:nth-child(3) {margin-top: 20px;}
+  section .tab_con_area .list_wrap .list_div:nth-child(1) {margin-top: 0;}
+  section .tab_con_area .list_wrap .list_div:nth-child(2), section .tab_con_area .list_wrap .list_div:nth-child(3) {margin-top: 40px;}
   section .tab_con_area .list_wrap .list_div .list .txt_div {padding: 25px 0; height: 150px;}
   section .tab_con_area .list_wrap .list_div .list .txt_div .tit {font-size: 20px;}
-  section .tab_con_area .list_wrap .list_div .list:hover .txt_div .view {bottom: 10px;}
+  section .tab_con_area .list_wrap .list_div .list:hover .txt_div .view {bottom: 0;}
   section .tab_con_area .list_wrap .txt_list_div {margin: 50px 0 0 0; width: 100%;}
   section .tab_con_area .list_wrap .txt_list_div:nth-child(3n) {margin-right: 0;}
   section .tab_con_area .list_wrap .txt_list_div .list .list_w {padding: 35px 60px 35px 25px; background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-url-link.svg") no-repeat right 25px center/35px;}
@@ -353,6 +355,7 @@ footer .copyright {margin-top: 15px;}
   .list_pop .pop_wrap .pop_cont .for_padding .scroll_area .view_site {margin-bottom: 10px;}
   .list_pop .pop_wrap .pop_cont .for_padding .scroll_area .view_site span {padding-right: 18px; font-size: 18px; background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-right-arrow.png") no-repeat right 0 top 4px/13px;}
   .list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .txt {font-size: 16px;}
+  .list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .txt + .txt {margin-top: 4px;}
   .list_pop .pop_wrap .pop_cont .for_padding .scroll_area .img {margin-top: 15px;}
 
   footer .copyright {margin-top: 10px;}

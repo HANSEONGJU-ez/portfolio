@@ -49,6 +49,7 @@ var commonScript = (function(){
       
       $(".typo_motion").css("opacity", 1);
       TweenMax.staggerTo(arrTit, 1.1, {left:0, opacity:1, ease:Power3.easeInOut}, 0.07);
+      $(".visual_txt").addClass("on")
 
       // 탭
       $(".tab_btn_area .btn").each(function(q){
@@ -173,12 +174,20 @@ var commonScript = (function(){
             });
             $("body").addClass("stop_scroll");
             $(".list_pop .pop_wrap .pop_head .title").text($(this).find(".tit span").text());
-            $(".list_pop .view_site").attr("href", $(this).data("url"))
-            $(".list_pop .img img").attr("src", $(this).data("src"))
-            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .role span").text($(this).data("role"))
-            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .contribution span").text($(this).data("contribution"))
+            $(".list_pop .view_site").attr("href", $(this).data("url"));
+            $(".list_pop .img img").attr("src", $(this).data("src"));
+            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .summary .data").text($(this).data("summary"));
+            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .performance .data").text($(this).data("performance"));
+            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .role .data").text($(this).data("role"));
+            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .skill .data").text($(this).data("skill"));
+            $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .contribution .data").text($(this).data("contribution"));
             $(".list_pop").fadeIn();
             popupResize();
+            if($(this).data("role") == ""){
+              $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .role").remove();
+              $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .skill").remove();
+              $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .contribution").remove();
+            }
           }
         });
       });

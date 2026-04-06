@@ -1,7 +1,14 @@
 {
+  "scripts": {
+    "sass": "sass --source-map common/scss/main-entry.scss common/css/compiled.css",
+    "sass:watch": "sass --source-map --watch common/scss/main-entry.scss common/css/compiled.css"
+  },
   "devDependencies": {
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.99.0",
     "stylelint": "^15.6.1",
-    "stylelint-config-standard": "^33.0.0"
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^10.0.0"
   },
   "dependencies": {
     "@types/node": "^22.15.17"

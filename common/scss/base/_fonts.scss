@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* font settings - Start */
+/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css'); */
+
+@mixin font-face($family, $file, $weight) {
+  @font-face {
+    font-family: $family;
+    src: url(../fonts/#{$file}.eot);
+    src: url(../fonts/#{$file}.eot?#iefix) format("embedded-opentype"),
+         url(../fonts/#{$file}.woff2) format("woff2"),
+         url(../fonts/#{$file}.woff) format("woff"),
+         url(../fonts/#{$file}.ttf) format("truetype");
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+/* Pretendard */
+@include font-face("Pretendard_Black", "Pretendard-Black", 900);
+@include font-face("Pretendard_ExtraBold", "Pretendard-ExtraBold", 800);
+@include font-face("Pretendard_Bold", "Pretendard-Bold", 700);
+@include font-face("Pretendard_SemiBold", "Pretendard-SemiBold", 600);
+@include font-face("Pretendard_Medium", "Pretendard-Medium", 500);
+@include font-face("Pretendard_Regular", "Pretendard-Regular", 400);
+@include font-face("Pretendard_Light", "Pretendard-Light", 300);
+@include font-face("Pretendard_ExtraLight", "Pretendard-ExtraLight", 200);
+@include font-face("Pretendard_Thin", "Pretendard-Thin", 100);
+/* Pretendard */
+
+/* Manrope */
+@include font-face("Manrope_ExtraBold", "Manrope-ExtraBold", 800);
+@include font-face("Manrope_Bold", "Manrope-Bold", 700);
+@include font-face("Manrope_SemiBold", "Manrope-SemiBold", 600);
+@include font-face("Manrope_Medium", "Manrope-Medium", 500);
+@include font-face("Manrope_Regular", "Manrope-Regular", 400);
+@include font-face("Manrope_Light", "Manrope-Light", 300);
+@include font-face("Manrope_ExtraLight", "Manrope-ExtraLight", 200);
+@include font-face("Manrope_Thin", "Manrope-Thin", 100);
+/* Manrope */
+/* font settings - End */

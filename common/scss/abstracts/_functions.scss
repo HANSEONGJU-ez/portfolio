@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// px → rem 변환
+/// @param {Number} $px - 변환할 px 값
+/// @param {Number} $base [16] - 기준 폰트 크기
+/// @return {Number} rem 값
+@function rem($px, $base: 16) {
+  @return calc($px / $base) * 1rem;
+}
+
+/// 그리드 아이템 너비 계산
+/// @param {Number} $columns - 컬럼 수
+/// @param {Number} $gap - 컬럼 사이 간격(px)
+/// @return {String} calc 값
+@function grid-width($columns, $gap) {
+  $total-gap: $gap * ($columns - 1);
+  @return calc((100% - #{$total-gap}px) / #{$columns});
+}

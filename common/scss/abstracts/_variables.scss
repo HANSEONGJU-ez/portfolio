@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+// ============================================
+// Colors
+// ============================================
+
+// Primary
+$color-primary: #1d81a5;
+$color-accent: #2eb7bd;
+
+// Base
+$color-black: #000;
+$color-white: #fff;
+$color-text: #333;
+$color-text-light: #777;
+$color-text-muted: #888;
+$color-placeholder: #8a8a8a;
+$color-disabled: #999;
+$color-disabled-bg: #e9e9e9;
+$color-border: #e5e5e5;
+$color-border-light: #ccc;
+$color-red: #e60808;
+
+// Overlay
+$color-overlay-light: rgba(0, 0, 0, .4);
+$color-overlay-dark: rgba(0, 0, 0, .8);
+
+// ============================================
+// Font Families
+// ============================================
+
+$font-regular: "Pretendard_Regular", sans-serif;
+$font-medium: "Pretendard_Medium", sans-serif;
+$font-semibold: "Pretendard_SemiBold", sans-serif;
+$font-bold: "Pretendard_Bold", sans-serif;
+$font-extrabold: "Pretendard_ExtraBold", sans-serif;
+$font-base: "Pretendard_Regular", "\B9D1\C740 \ACE0\B515", "Malgun Gothic", sans-serif;
+
+$font-noto-thin: "NotoSans_Thin", sans-serif;
+$font-noto-regular: "NotoSans_Regular", sans-serif;
+$font-noto-medium: "NotoSans_Medium", sans-serif;
+$font-noto-bold: "NotoSans_Bold", sans-serif;
+
+// ============================================
+// Breakpoints
+// ============================================
+
+$bp-sm: 320px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+$bp-2xl: 1440px;
+$bp-3xl: 1580px;
+$bp-4xl: 1680px;
+$bp-5xl: 1880px;
+
+// ============================================
+// Layout
+// ============================================
+
+$inner-width: 1520px;
+
+// ============================================
+// Transitions
+// ============================================
+
+$transition-fast: .3s ease;
+$transition-normal: .5s ease;
+$transition-slow: .9s ease;
+
+// ============================================
+// Scroll Motion
+// ============================================
+
+$scroll-offset: 80px;

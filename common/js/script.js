@@ -176,6 +176,7 @@ var commonScript = (function(){
             $(".list_pop .pop_wrap .pop_head .title").text($(this).find(".tit span").text());
             $(".list_pop .view_site").attr("href", $(this).data("url"));
             $(".list_pop .img img").attr("src", $(this).data("src"));
+            $(".list_pop .view_repo").attr("href", $(this).data("repo"));
             $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .summary .data").text($(this).data("summary"));
             $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .performance .data").text($(this).data("performance"));
             $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .role .data").text($(this).data("role"));
@@ -187,6 +188,8 @@ var commonScript = (function(){
               $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .role").remove();
               $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .skill").remove();
               $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .contribution").remove();
+            }else if(!$(this).data("repo")){
+              $(".list_pop .view_repo").remove()
             }
           }
         });

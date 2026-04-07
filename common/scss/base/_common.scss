@@ -715,7 +715,6 @@ section {
           .txt_div {
             padding: 40px 0;
             width: 100%;
-            height: 210px;
             transition: height .5s ease;
 
             .tit {
@@ -735,6 +734,7 @@ section {
               padding-left: 20px;
               margin-top: 10px;
               font-size: 16px;
+              line-height: 22px;
               font-family: "Pretendard_Medium", sans-serif;
               color: #fff;
 
@@ -838,6 +838,12 @@ section {
       &.pc {background: #569cc7;}
       &.mobile {background: #316bc6;}
       &.no_show {background: #8a0606;}
+      &.react {
+        color: #000;
+        font-family: "Pretendard_Medium", sans-serif;
+        background: #fff12c;
+        border: 2px solid #feffa9;
+      }
       &.position {
         position: relative;
         margin-left: 20px;
@@ -934,6 +940,23 @@ section {
           }
         }
 
+        .view_repo {
+          display: inline-block;
+          margin: 0 20px 20px;
+
+          span {
+            padding-right: 25px;
+            font-size: 22px;
+            font-family: "Pretendard_Bold", sans-serif;
+            background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-right-arrow.png") no-repeat right 5px top 7px/15px;
+            transition: background .3s ease;
+          }
+
+          &:hover span {
+            background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-right-arrow.png") no-repeat right 0 top 7px/15px;
+          }
+        }
+
         .con_txt .txt {
           display: flex;
           gap: 8px;
@@ -976,7 +999,7 @@ footer {
   text-align: left;
   background: #000;
 
-  p {
+  .title {
     font-size: 14px;
     font-family: "Pretendard_Medium", sans-serif;
     color: #bebebe;
@@ -1052,7 +1075,47 @@ footer {
     .control_area {right: 30px;}
   }
 
-  section .tools_list {width: 100%;}
+  section {
+    .tools_list {width: 100%;}
+
+    .tab_con_area {
+      .list_wrap {
+        .list_div {
+          width: calc((100% - 50px) / 2);
+          width: -webkit-calc((100% - 50px) / 2);
+
+          &:nth-child(3n) {margin-right: 40px;}
+          &:nth-child(2n) {margin-right: 0;}
+          &:nth-child(3) {margin-top: 40px;}
+
+          .list:hover {
+            .list_w {top: 0;}
+            .txt_div {
+              .view {
+                bottom: 0;
+              }
+            }
+          }
+          .list .txt_div .view {
+            bottom: 0;
+            opacity: 1;
+          }
+        }
+
+        .txt_list_div {
+          width: calc((100% - 50px) / 2);
+          width: -webkit-calc((100% - 50px) / 2);
+
+          &:nth-child(3n) {margin-right: 50px;}
+          &:nth-child(2n) {margin-right: 0;}
+          .list .list_w:hover {
+            top: 0;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1098,9 +1161,9 @@ footer {
           width: calc((100% - 50px) / 2);
           width: -webkit-calc((100% - 50px) / 2);
 
-          &:nth-child(3n) {margin-right: 50px;}
+          &:nth-child(3n) {margin-right: 40px;}
           &:nth-child(2n) {margin-right: 0;}
-          &:nth-child(3) {margin-top: 50px;}
+          &:nth-child(3) {margin-top: 40px;}
 
           .list:hover .list_w {top: 0;}
           .list .txt_div .view {

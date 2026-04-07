@@ -184,7 +184,7 @@ var commonScript = (function(){
             $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .contribution .data").text($(this).data("contribution"));
             $(".list_pop").fadeIn();
             popupResize();
-            if($(this).data("role") == ""){
+            if(!$(this).data("role")){
               $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .role").remove();
               $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .skill").remove();
               $(".list_pop .pop_wrap .pop_cont .for_padding .scroll_area .con_txt .contribution").remove();

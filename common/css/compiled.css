@@ -1014,7 +1014,7 @@ section .tab_con_area .list_wrap .list_div .list .txt_div .txt:before {
 }
 section .tab_con_area .list_wrap .list_div .list .txt_div .view {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 0;
   opacity: 0;
   color: rgba(255, 255, 255, 0.8);
@@ -1025,7 +1025,7 @@ section .tab_con_area .list_wrap .list_div .list:hover .list_w {
   top: -10px;
 }
 section .tab_con_area .list_wrap .list_div .list:hover .txt_div .view {
-  bottom: 20px;
+  bottom: 0;
   opacity: 1;
 }
 section .tab_con_area .list_wrap .list_div .list:hover .txt_div .tit span:after {

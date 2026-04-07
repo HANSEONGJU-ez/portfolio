@@ -749,7 +749,7 @@ section {
 
             .view {
               position: absolute;
-              bottom: 0;
+              bottom: -20px;
               left: 0;
               opacity: 0;
               color: rgba(255, 255, 255, .8);
@@ -761,7 +761,7 @@ section {
           &:hover {
             .list_w {top: -10px;}
             .txt_div .view {
-              bottom: 20px;
+              bottom: 0;
               opacity: 1;
             }
             .txt_div .tit span:after {width: 100%;}

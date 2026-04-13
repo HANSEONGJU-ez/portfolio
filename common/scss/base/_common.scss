@@ -1,4 +1,4 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
   letter-spacing: -.01em;
@@ -39,7 +39,7 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-print-color-adjust: exact !important;
 
-  &.stop_scroll {
+  &.stop-scroll {
     overflow: hidden;
     height: 100%;
     min-height: 100%;
@@ -281,7 +281,6 @@ button {
   cursor: pointer;
   overflow: visible;
   white-space: nowrap;
-  /* button:focus, button:active { outline: none; } */
   &::-moz-focus-inner {
     padding: 0;
     border: 0;
@@ -303,25 +302,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   margin: 0 auto;
   width: 1520px;
 }
-.red_txt {color: #e60808;}
+.red-txt {color: #e60808;}
 
 /* visual */
-.visual_area {
+.visual-area {
   position: relative;
   width: 100%;
   height: 100vh;
 
-  &.active .visual_div .control_area {
+  &.active .visual-div .control-area {
     opacity: 1;
     transition-delay: .4s;
   }
 
-  .visual_div {
+  .visual-div {
     position: relative;
     width: 100%;
     height: 100%;
 
-    .tit_motion {
+    .tit-motion {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -331,7 +330,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
       z-index: 2;
     }
 
-    .visual_tit span {
+    .visual-tit span {
       font-size: 120px;
       color: #fff;
       font-family: "Pretendard_ExtraBold", sans-serif;
@@ -357,7 +356,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
       }
     }
 
-    .visual_txt {
+    .visual-txt {
       position: relative;
       top: 80px;
       margin-top: 40px;
@@ -374,7 +373,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
       }
     }
 
-    .control_area {
+    .control-area {
       position: absolute;
       top: 50%;
       right: 54px;
@@ -384,17 +383,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
       z-index: 2;
     }
 
-    .slide_num {
+    .slide-num {
       display: flex;
       align-items: center;
       flex-direction: column;
       color: #fff;
       font-size: 12px;
 
-      .total_num {left: 130px;}
+      .total-num {left: 130px;}
     }
 
-    .progress_bar {
+    .progress-bar {
       margin: 20px 0;
       width: 2px;
       height: 140px;
@@ -408,7 +407,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     }
   }
 
-  .bg_img {
+  .bg-img {
     position: absolute;
     top: 0;
     left: 50%;
@@ -464,7 +463,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 /* section */
 section {
-  .big_title {
+  .big-title {
     position: relative;
     top: 80px;
     text-align: center;
@@ -491,7 +490,7 @@ section {
     }
   }
 
-  .sub_tit {
+  .sub-tit {
     position: relative;
     top: 80px;
     margin-top: 40px;
@@ -503,11 +502,11 @@ section {
   }
 
   &.active {
-    .big_title {
+    .big-title {
       top: 0;
       opacity: 1;
     }
-    .sub_tit {
+    .sub-tit {
       top: 0;
       opacity: 1;
       transition-delay: .1s;
@@ -515,9 +514,9 @@ section {
   }
 
   /* section tool */
-  &.tools_div {padding: 220px 0 240px;}
+  &.tools-div {padding: 220px 0 240px;}
 
-  .tools_list {
+  .tools-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -572,7 +571,7 @@ section {
     }
   }
 
-  &.active .tools_list {
+  &.active .tools-list {
     > * {
       top: 0;
       opacity: 1;
@@ -588,13 +587,13 @@ section {
     padding: 240px 0 280px;
     background: linear-gradient(to bottom, #1d1d1d 90%, #fff 100%);
 
-    .big_title {color: #fff;}
-    .sub_tit {color: #fff;}
+    .big-title {color: #fff;}
+    .sub-tit {color: #fff;}
   }
 
-  .tab_func_area {margin-top: 120px;}
+  .tab-func-area {margin-top: 120px;}
 
-  .tab_btn_area {
+  .tab-btn-area {
     display: flex;
     justify-content: center;
     position: relative;
@@ -634,27 +633,27 @@ section {
     }
   }
 
-  .tab_con_area {
+  .tab-con-area {
     margin-top: 110px;
 
-    .tab_con {
+    .tab-con {
       display: none;
       &.on {display: block;}
     }
 
-    .noti_txt {
+    .noti-txt {
       color: #fff;
       font-family: "Pretendard_Medium", sans-serif;
       font-size: 18px;
       line-height: 28px;
     }
 
-    .list_wrap {
+    .list-wrap {
       display: flex;
       flex-wrap: wrap;
 
       &.active {
-        .list_div .list {
+        .list-div .list {
           top: 0;
           opacity: 1;
         }
@@ -662,13 +661,13 @@ section {
         @for $i from 2 through 21 {
           $delay: ($i - 1) * .1s;
 
-          .list_div:nth-child(#{$i}) .list {
+          .list-div:nth-child(#{$i}) .list {
             transition-delay: $delay;
           }
         }
       }
 
-      .list_div {
+      .list-div {
         margin: 40px 50px 0 0;
         width: calc((100% - 100px) / 3);
         width: -webkit-calc((100% - 100px) / 3);
@@ -682,9 +681,9 @@ section {
           opacity: 0;
           transition: top 1s ease, opacity .5s ease;
 
-          &.no_click {cursor: auto;}
+          &.no-click {cursor: auto;}
 
-          .list_w {
+          .list-w {
             overflow: hidden;
             position: relative;
             top: 0;
@@ -692,7 +691,7 @@ section {
             transition: top .5s ease, box-shadow .5s ease;
           }
 
-          .img_area {
+          .img-area {
             overflow: hidden;
             position: relative;
             padding-top: 56%;
@@ -706,16 +705,44 @@ section {
               height: 100%;
             }
 
-            &.no_img {
+            &.no-img {
               background: #404040;
               img {width: 80px;}
             }
+
+            &:before {
+              display: block;
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 120%;
+              height: 120%;
+              background: rgba(0, 0, 0, .7);
+              z-index: 1;
+              opacity: 0;
+              transition: opacity .4s ease;
+            }
+
+            &:after {
+              display: block;
+              content: "View More";
+              position: absolute;
+              top: 55%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: #fff;
+              font-size: 24px;
+              z-index: 2;
+              font-family: "Pretendard_Semibold", sans-serif;
+              opacity: 0;
+              transition: top .4s ease, opacity .4s ease;
+            }
           }
 
-          .txt_div {
+          .txt-div {
             padding: 40px 0;
             width: 100%;
-            transition: height .5s ease;
 
             .tit {
               margin-top: 13px;
@@ -734,7 +761,7 @@ section {
               padding-left: 20px;
               margin-top: 10px;
               font-size: 16px;
-              line-height: 22px;
+              line-height: 24px;
               font-family: "Pretendard_Medium", sans-serif;
               color: #fff;
 
@@ -746,30 +773,25 @@ section {
                 left: 0;
               }
             }
-
-            .view {
-              position: absolute;
-              bottom: -20px;
-              left: 0;
-              opacity: 0;
-              color: rgba(255, 255, 255, .8);
-              font-size: 14px;
-              transition: bottom .5s ease, opacity .5s ease;
-            }
           }
 
           &:hover {
-            .list_w {top: -10px;}
-            .txt_div .view {
-              bottom: 0;
-              opacity: 1;
+            .list-w {top: -10px;}
+            .img-area {
+              &:before {
+                opacity: 1;
+              }
+              &:after {
+                top: 50%;
+                opacity: 1;
+              }
             }
-            .txt_div .tit span:after {width: 100%;}
+            .txt-div .tit span:after {width: 100%;}
           }
         }
       }
 
-      .txt_list_div {
+      .txt-list-div {
         margin: 100px 50px 0 0;
         width: calc((100% - 100px) / 3);
         width: -webkit-calc((100% - 100px) / 3);
@@ -779,7 +801,7 @@ section {
         .list {
           display: block;
 
-          .list_w {
+          .list-w {
             overflow: hidden;
             position: relative;
             top: 0;
@@ -797,7 +819,7 @@ section {
           &:nth-child(#{$i}) .list {transition-delay: $delay;}
         }
 
-        &:hover .list .list_w {
+        &:hover .list .list-w {
           top: -10px;
           border: 1px solid #2eb7bd;
         }
@@ -819,7 +841,7 @@ section {
     }
   }
 
-  .label_div {
+  .label-div {
     display: flex;
     flex-wrap: wrap;
 
@@ -837,13 +859,8 @@ section {
 
       &.pc {background: #569cc7;}
       &.mobile {background: #316bc6;}
-      &.no_show {background: #8a0606;}
-      &.react {
-        color: #000;
-        font-family: "Pretendard_Medium", sans-serif;
-        background: #fff12c;
-        border: 2px solid #feffa9;
-      }
+      &.no-show {background: #8a0606;}
+      &.react {background: #cfc100;}
       &.position {
         position: relative;
         margin-left: 20px;
@@ -868,7 +885,7 @@ section {
 }
 
 /* 팝업 */
-.list_pop {
+.list-pop {
   display: none;
   position: fixed;
   top: 0;
@@ -878,7 +895,7 @@ section {
   background: rgba(0, 0, 0, .4);
   z-index: 10;
 
-  .pop_wrap {
+  .pop-wrap {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -888,7 +905,7 @@ section {
     background: #fff;
     border-radius: 10px;
 
-    .pop_head {
+    .pop-head {
       padding: 30px 40px 0 40px;
 
       .title {
@@ -899,11 +916,11 @@ section {
       }
     }
 
-    .pop_cont .for_padding {
+    .pop-cont .for-padding {
       padding: 20px 15px 30px 40px;
       height: 100%;
 
-      .scroll_area {
+      .scroll-area {
         overflow-y: auto;
         padding-right: 20px;
         height: 100%;
@@ -923,7 +940,7 @@ section {
           background-color: #979797;
         }
 
-        .view_site {
+        .view-site {
           display: inline-block;
           margin-bottom: 20px;
 
@@ -940,24 +957,7 @@ section {
           }
         }
 
-        .view_repo {
-          display: inline-block;
-          margin: 0 20px 20px;
-
-          span {
-            padding-right: 25px;
-            font-size: 22px;
-            font-family: "Pretendard_Bold", sans-serif;
-            background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-right-arrow.png") no-repeat right 5px top 7px/15px;
-            transition: background .3s ease;
-          }
-
-          &:hover span {
-            background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-right-arrow.png") no-repeat right 0 top 7px/15px;
-          }
-        }
-
-        .con_txt .txt {
+        .con-txt .txt {
           display: flex;
           gap: 8px;
           font-size: 18px;
@@ -982,7 +982,7 @@ section {
       }
     }
 
-    .btn_close {
+    .btn-close {
       position: absolute;
       top: 33px;
       right: 40px;
@@ -1008,7 +1008,7 @@ footer {
 }
 
 /* 타이포 모션 공통 */
-.typo_motion {
+.typo-motion {
   opacity: 0;
   span {
     position: relative;
@@ -1018,7 +1018,7 @@ footer {
 }
 
 /* 탑버튼 */
-.btn_top {
+.btn-top {
   display: none;
   position: fixed;
   bottom: 40px;
@@ -1050,7 +1050,7 @@ footer {
     opacity: 1;
   }
 
-  .svg_circle {
+  .svg-circle {
     stroke-dashoffset: 163;
     stroke-dasharray: 210;
   }
@@ -1060,85 +1060,45 @@ footer {
 /* Responsive */
 @media screen and (max-width: 1580px) {
   .inner {width: 90%;}
-  .btn_top {right: 5%;}
+  .btn-top {right: 5%;}
 }
 
 @media screen and (max-width: 1280px) {
-  .visual_area .visual_div {
-    .tit_motion {width: 90%;}
-    .visual_tit span {font-size: 80px;}
-    .visual_txt {
+  .visual-area .visual-div {
+    .tit-motion {width: 90%;}
+    .visual-tit span {font-size: 80px;}
+    .visual-txt {
       margin-top: 32px;
       font-size: 20px;
       line-height: 30px;
     }
-    .control_area {right: 30px;}
+    .control-area {right: 30px;}
   }
 
-  section {
-    .tools_list {width: 100%;}
-
-    .tab_con_area {
-      .list_wrap {
-        .list_div {
-          width: calc((100% - 50px) / 2);
-          width: -webkit-calc((100% - 50px) / 2);
-
-          &:nth-child(3n) {margin-right: 40px;}
-          &:nth-child(2n) {margin-right: 0;}
-          &:nth-child(3) {margin-top: 40px;}
-
-          .list:hover {
-            .list_w {top: 0;}
-            .txt_div {
-              .view {
-                bottom: 0;
-              }
-            }
-          }
-          .list .txt_div .view {
-            bottom: 0;
-            opacity: 1;
-          }
-        }
-
-        .txt_list_div {
-          width: calc((100% - 50px) / 2);
-          width: -webkit-calc((100% - 50px) / 2);
-
-          &:nth-child(3n) {margin-right: 50px;}
-          &:nth-child(2n) {margin-right: 0;}
-          .list .list_w:hover {
-            top: 0;
-            border: 1px solid #fff;
-          }
-        }
-      }
-    }
-  }
+  section .tools-list {width: 100%;}
 }
 
 @media screen and (max-width: 1024px) {
-  .visual_area .visual_div {
-    .visual_tit span {
+  .visual-area .visual-div {
+    .visual-tit span {
       font-size: 60px;
       &:last-child:after {
         width: 15px;
         height: 15px;
       }
     }
-    .visual_txt {
+    .visual-txt {
       font-size: 18px;
       line-height: 28px;
     }
   }
 
   section {
-    .big_title {font-size: 60px;}
+    .big-title {font-size: 60px;}
 
-    &.tools_div {padding: 160px 0 180px;}
+    &.tools-div {padding: 160px 0 180px;}
 
-    .tools_list {
+    .tools-list {
       flex-wrap: wrap;
 
       .tools {
@@ -1152,33 +1112,30 @@ footer {
     }
 
     &.portfolio {padding: 180px 0 220px;}
-    .tab_func_area {margin-top: 90px;}
-    .tab_con_area {
+    .tab-func-area {margin-top: 90px;}
+    .tab-con-area {
       margin-top: 80px;
 
-      .list_wrap {
-        .list_div {
-          width: calc((100% - 50px) / 2);
-          width: -webkit-calc((100% - 50px) / 2);
-
-          &:nth-child(3n) {margin-right: 40px;}
-          &:nth-child(2n) {margin-right: 0;}
-          &:nth-child(3) {margin-top: 40px;}
-
-          .list:hover .list_w {top: 0;}
-          .list .txt_div .view {
-            bottom: 0;
-            opacity: 1;
-          }
-        }
-
-        .txt_list_div {
+      .list-wrap {
+        .list-div {
           width: calc((100% - 50px) / 2);
           width: -webkit-calc((100% - 50px) / 2);
 
           &:nth-child(3n) {margin-right: 50px;}
           &:nth-child(2n) {margin-right: 0;}
-          .list .list_w:hover {
+          &:nth-child(3) {margin-top: 40px;}
+
+          .list:hover .list-w {top: 0;}
+        }
+
+        .txt-list-div {
+          margin-top: 50px;
+          width: calc((100% - 50px) / 2);
+          width: -webkit-calc((100% - 50px) / 2);
+
+          &:nth-child(3n) {margin-right: 50px;}
+          &:nth-child(2n) {margin-right: 0;}
+          .list .list-w:hover {
             top: 0;
             border: 1px solid #fff;
           }
@@ -1187,19 +1144,19 @@ footer {
     }
   }
 
-  .list_pop .pop_wrap {width: 90%;}
+  .list-pop .pop-wrap {width: 90%;}
 }
 
 @media screen and (max-width: 768px) {
-  .visual_area .visual_div {
-    .tit_motion {
+  .visual-area .visual-div {
+    .tit-motion {
       left: 5%;
       transform: translate(0, -50%);
       width: 320px;
       max-width: 80%;
       text-align: left;
     }
-    .visual_tit span {
+    .visual-tit span {
       font-size: 40px;
       &:last-child {
         padding-right: 10px;
@@ -1210,20 +1167,20 @@ footer {
         }
       }
     }
-    .visual_txt {
+    .visual-txt {
       margin-top: 24px;
       font-size: 16px;
       line-height: 26px;
     }
-    .control_area {right: 5%;}
-    .progress_bar {
+    .control-area {right: 5%;}
+    .progress-bar {
       margin: 10px 0;
       height: 100px;
     }
   }
 
   section {
-    .big_title {
+    .big-title {
       font-size: 40px;
       span:after {
         right: -15px;
@@ -1231,14 +1188,14 @@ footer {
         height: 10px;
       }
     }
-    .sub_tit {
+    .sub-tit {
       margin-top: 24px;
       font-size: 16px;
       line-height: 26px;
     }
 
-    &.tools_div {padding: 110px 0 120px;}
-    .tools_list {
+    &.tools-div {padding: 110px 0 120px;}
+    .tools-list {
       margin: 50px auto 0;
       .tools .icon img {width: 60px;}
     }
@@ -1247,8 +1204,8 @@ footer {
       padding: 120px 0;
       background: linear-gradient(to bottom, #1d1d1d 96%, #fff 100%);
     }
-    .tab_func_area {margin-top: 60px;}
-    .tab_btn_area .btn {
+    .tab-func-area {margin-top: 60px;}
+    .tab-btn-area .btn {
       padding: 10px 20px;
       font-size: 20px;
       &.on:after {
@@ -1257,11 +1214,11 @@ footer {
       }
     }
 
-    .tab_con_area {
+    .tab-con-area {
       margin-top: 60px;
 
-      .list_wrap {
-        .list_div {
+      .list-wrap {
+        .list-div {
           margin: 40px 0 0 0;
           width: 100%;
           &:nth-child(3n) {margin-right: 0;}
@@ -1269,21 +1226,24 @@ footer {
           &:nth-child(2), &:nth-child(3) {margin-top: 40px;}
 
           .list {
-            .txt_div {
+            .txt-div {
               padding: 25px 0;
               height: 150px;
               .tit {font-size: 20px;}
+              .txt {
+                font-size: 14px;
+                line-height: 22px;
+              }
             }
-            &:hover .txt_div .view {bottom: 0;}
           }
         }
 
-        .txt_list_div {
+        .txt-list-div {
           margin: 50px 0 0 0;
           width: 100%;
           &:nth-child(3n) {margin-right: 0;}
 
-          .list .list_w {
+          .list .list-w {
             padding: 35px 60px 35px 25px;
             background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-url-link.svg") no-repeat right 25px center/35px;
           }
@@ -1299,37 +1259,37 @@ footer {
         }
       }
 
-      .noti_txt {
+      .noti-txt {
         font-size: 16px;
         line-height: 26px;
       }
     }
 
-    .label_div .label {
+    .label-div .label {
       padding: 5px 10px 3px;
       font-size: 12px;
     }
   }
 
-  .list_pop .pop_wrap {
-    .pop_head {
+  .list-pop .pop-wrap {
+    .pop-head {
       padding: 15px 20px 0 20px;
       .title {
         padding: 0 30px 10px 0;
         font-size: 20px;
       }
     }
-    .btn_close {
+    .btn-close {
       top: 18px;
       right: 20px;
       width: 20px;
       height: 20px;
     }
-    .pop_cont .for_padding {
+    .pop-cont .for-padding {
       padding: 10px 10px 15px 20px;
 
-      .scroll_area {
-        .view_site {
+      .scroll-area {
+        .view-site {
           margin-bottom: 10px;
           span {
             padding-right: 18px;
@@ -1337,7 +1297,7 @@ footer {
             background: url("https://raw.githack.com/Hseongju/portfolio/main/common/images/icon-right-arrow.png") no-repeat right 0 top 4px/13px;
           }
         }
-        .con_txt .txt {
+        .con-txt .txt {
           font-size: 16px;
           & + .txt {margin-top: 4px;}
         }
@@ -1350,8 +1310,8 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-  .visual_area .visual_div {
-    .tit_motion {width: 220px;}
-    .visual_tit span {font-size: 35px;}
+  .visual-area .visual-div {
+    .tit-motion {width: 220px;}
+    .visual-tit span {font-size: 35px;}
   }
 }

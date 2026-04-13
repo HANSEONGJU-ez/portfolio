@@ -1,9 +1,8 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Portfolio</title>
+		<title>SJ's Portfolio</title>
     <link rel="shortcut icon" href="./common/images/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<meta name="keywords" content=""/>
@@ -16,7 +15,7 @@
 		<meta property="og:image" content="img URL" id="og-image-value"/>
 		<link rel="stylesheet" href="./common/css/swiper.css" />
 		<link rel="stylesheet" href="./common/css/compiled.css" />
-		<script type="text/javascript" src="./common/js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="./common/js/jquery-3.7.1.min.js"></script>
 		<script type="text/javascript" src="./common/js/gsap.min.js"></script>
 		<script type="text/javascript" src="./common/js/ScrollTrigger.min.js"></script>
 		<script type="text/javascript" src="./common/js/swiper.min.js"></script>
@@ -24,29 +23,27 @@
 	</head>
 	<body>
     <div id="wrap">
-			<div class="visual_area scroll_motion">
-				<div class="visual_div">
-					<div class="info_div">
-						<div class="tit_motion">
-							<div class="visual_tit typo_motion">
+			<div class="visual-area scroll-motion">
+				<div class="visual-div">
+					<div class="info-div">
+						<div class="tit-motion">
+							<div class="visual-tit typo-motion">
 								<p>SJ's PORTFOLIO</p>
 							</div>
-							<p class="visual_txt">약 7년 경력의 웹 퍼블리셔로 구축 &middot; 운영 프로젝트를 수행했습니다.<br />반응형 UI, 접근성, 크로스 브라우징에 강점이 있으며 <br />대규모 서비스 경험을 바탕으로 빠르고 안정적인 퍼블리싱을 수행합니다.</p>
+							<p class="visual-txt">약 7년 경력의 웹 퍼블리셔로 구축 &middot; 운영 프로젝트를 수행했습니다.<br />반응형 UI, 접근성, 크로스 브라우징에 강점이 있으며 <br />대규모 서비스 경험을 바탕으로 빠르고 안정적인 퍼블리싱을 수행합니다.</p>
 						</div>
-						<div class="control_area">
-							<div class="slide_num">
-								<p class="current_num">1</p>
-								<div class="progress_bar">
+						<div class="control-area">
+							<div class="slide-num">
+								<p class="current-num">1</p>
+								<div class="progress-bar">
 									<div class="bar"></div>
 								</div>
-								<p class="total_num"></p>
+								<p class="total-num"></p>
 							</div>
-							
-							<button type="button" class="vis_btn pause"></button>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-container bg_img">
+				<div class="swiper-container bg-img">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide on">
 							<p class="img" style="background:url('./common/images/img-visual-01.jpg') no-repeat center center/cover"></p>
@@ -63,20 +60,20 @@
 			</div>
 
 			<!-- portfolio section -->
-			<section class="portfolio scroll_motion">
+			<section class="portfolio scroll-motion">
 				<div class="inner">
-					<p class="big_title"><span>PORTFOLIO</span></p>
-					<p class="sub_tit">구축, 운영, 제안 포트폴리오입니다.</p>
-					<div class="tab_func_area">
-						<div class="tab_btn_area scroll_motion">
-							<a href="javascript:" class="btn on"><span>구축</span></a>
-							<a href="javascript:" class="btn"><span>운영</span></a>
-							<a href="javascript:" class="btn"><span>제안</span></a>
+					<p class="big-title"><span>PORTFOLIO</span></p>
+					<p class="sub-tit">구축, 운영, 제안 포트폴리오입니다.</p>
+					<div class="tab-func-area">
+						<div class="tab-btn-area scroll-motion">
+							<button type="button" class="btn on"><span>구축</span></button>
+							<button type="button" class="btn"><span>운영</span></button>
+							<button type="button" class="btn"><span>제안</span></button>
 						</div>
-						<div class="tab_con_area">
-							<div class="tab_con on">
-								<div class="list_wrap scroll_motion">
-									<div class="list_div">
+						<div class="tab-con-area">
+							<div class="tab-con on">
+								<div class="list-wrap scroll-motion">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="이력서 데이터를 기반으로 AI가 핵심 역량과 보완점을 분석하는 웹 서비스로, 프론트엔드부터 Node 서버, OpenAI API 연동까지 전체 흐름을 직접 구현했습니다."
 											data-role="프론트엔드 및 백엔드 전반 구현 (개인 프로젝트)"
@@ -87,23 +84,22 @@
 											data-src="./common/images/img-portfolio-list-view-31.jpg"
 											data-repo="https://github.com/HANSEONGJU-ez/my-react-app"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-31.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label react">React</p>
 														<p class="label position">단독 수행</p>
 													</div>
 													<p class="tit"><span>AI Resume Analyzer</span></p>
 													<p class="txt">이력서 데이터를 기반으로 AI가 핵심 역량과 보완점을 분석하는 웹 서비스</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="이력서 데이터를 기반으로 AI가 핵심 역량과 보완점을 분석하는 웹 서비스로, 프론트엔드부터 Node 서버, OpenAI API 연동까지 전체 흐름을 직접 구현했습니다."
 											data-role="프론트엔드 및 백엔드 전반 구현 (개인 프로젝트)"
@@ -114,23 +110,22 @@
 											data-src="./common/images/img-portfolio-list-view-33.jpg"
 											data-repo="https://github.com/HANSEONGJU-ez/my-react-app"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-33.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label react">React</p>
 														<p class="label position">단독 수행</p>
 													</div>
 													<p class="tit"><span>AI Job Relevance Analyzer</span></p>
 													<p class="txt">자기소개서의 직무 적합도를 AI 기반으로 분석하고 개선 방향을 제공하는 서비스</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="구축 프로젝트로 주요 화면 퍼블리싱을 담당했습니다. 디자이너, 개발자 및 현업과 협업하며 서비스에 맞는 UI를 구현했고, 오픈 후에는 수정 요청 대응을 진행했습니다. PL 역할을 맡아 작업을 조율하며 일정과 업무를 맞춰 진행했습니다."
 											data-role="퍼블리싱 및 UI 개선 / PL (일정 및 작업 조율)"
@@ -140,23 +135,22 @@
 											data-performance="일정 내 안정적인 서비스 반영 / 작업 결과에 대해 긍정적인 피드백 경험"
 											data-src="./common/images/img-portfolio-list-view-30.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area" style="background-color: #2f4399;">
+											<div class="list-w">
+												<p class="img-area" style="background-color: #2f4399;">
 													<img src="./common/images/img-portfolio-list-30.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label mobile">APP</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>MY 삼성화재 APP</span></p>
 													<p class="txt">대규모 멤버스 라운지 서비스 UI 구축</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="웹 접근성 작업을 하였고 PL 역할을 맡아 작업을 조율하며 일정과 업무를 맞춰 진행했습니다. 개발자 및 현업과 협업하며 서비스에 맞는 UI를 구현했고, 오픈 후에는 수정 요청 대응을 진행했습니다."
 											data-role="퍼블리싱 및 웹 접근성 작업 / PL (일정 및 작업 조율)"
@@ -166,24 +160,23 @@
 											data-performance="일정 내 안정적인 서비스 반영 / 작업 결과에 대해 긍정적인 피드백 경험"
 											data-src="./common/images/img-portfolio-list-view-29.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-29.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>삼성화재 다이렉트 착</span></p>
 													<p class="txt">보험 서비스 UI 구축</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="React 기반으로 북마크 데이터를 관리하는 웹 어플리케이션을 구현했습니다. 사용자는 링크를 추가, 수정, 삭제할 수 있으며 즐겨찾기 및 검색, 태그 기능을 통해 원하는 데이터를 빠르게 검색할 수 있도록 설계했습니다. 또한 localStorage를 활용하여 새로고침 이후에도 데이터가 유지되도록 구현했습니다."
 											data-role="프론트엔드 및 백엔드 전반 구현 (개인 프로젝트)"
@@ -194,23 +187,22 @@
 											data-src="./common/images/img-portfolio-list-view-32.jpg"
 											data-repo="https://github.com/HANSEONGJU-ez/bookmark-app"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-32.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label react">React</p>
 														<p class="label position">단독 수행</p>
 													</div>
 													<p class="tit"><span>Dev Resource Bookmark Manager</span></p>
 													<p class="txt">React 상태 관리 및 데이터 흐름 학습을 위해 구현</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 주요 화면에 모션을 적용ㅇ해 사용자 흐름에 맞게 인터랙션을 구현했습니다. 게시판 같은 경우 개발자와 협업하며 실제 서비스 환경에 맞게 UI 적용 및 코드 구성을 했고, 브라우저 호환을 고려해 작업을 진행했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -220,23 +212,22 @@
 											data-performance="주요 화면에 모션을 적용해 사용자 흐름에 맞는 인터랙션 구현"	
 											data-src="./common/images/img-portfolio-list-view-28.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-28.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>HD한국조선해양</span></p>
 													<p class="txt">기업 통합 웹 서비스 UI 구축 및 퍼블리싱 리딩</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 달력 기반 날짜 선택과 인원 선택 기능을 스크립트로 구현했습니다. 사용자 입력 흐름을 고려해 UI를 구성했고, 개발자와 협업하며 실제 서비스에 맞게 적용했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -246,23 +237,22 @@
 											data-performance="달력과 인원 선택 인터랙션을 구현해 사용자 입력 흐름에 맞는 예약 UI 구성"	
 											data-src="./common/images/img-portfolio-list-view-27.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-27.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>현대드림투어 호텔 HUB API 통합시스템</span></p>
 													<p class="txt">호텔 예약 API 연동 기반 UI 퍼블리싱 총괄</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 반응형과 브라우저 호환을 고려해 화면을 구현했으며, 기획, 디자인, 개발과 협업하며 실제 서비스 환경에 맞게 UI를 적용했습니다. 구축 과정에서 발생하는 이슈를 조율하며 일정 내 작업을 완료하는 데 집중했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -272,23 +262,22 @@
 											data-performance="구축 일정 내 안정적인 화면 구현 완료 / 이슈 대응 및 일정 준수"
 											data-src="./common/images/img-portfolio-list-view-26.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-26.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>HD현대</span></p>
 													<p class="txt">그룹 통합 웹 환경 UI 구축</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 다국어 환경을 고려해 언어별 레이아웃과 텍스트 길이를 반영한 UI를 구성했습니다. 다양한 언어 환경에서도 화면이 자연스럽게 보이도록 작업했고, 기획, 디자인, 개발과 협업하며 실제 서비스에 맞게 적용했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -298,23 +287,22 @@
 											data-performance="메인 섹션 템플릿화 / 다국어 환경에서도 자연스럽게 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-25.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-25.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>KIOTI</span></p>
 													<p class="txt">글로벌 서비스 대응 반응형 UI 구축 및 퍼블리싱 리딩</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 사용자가 바를 움직이면 이미지가 순차적으로 변경되도록 구현해 3D처럼 보이는 인터랙션을 적용했습니다. 사용자 조작에 따라 자연스럽게 화면이 전환되도록 구성했고, 디자이너, 개발자와 협업하며 실제 서비스에 맞게 적용했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -324,24 +312,23 @@
 											data-performance="사용자 조작에 따라 이미지가 변경되는 인터랙션을 구현해 3D처럼 보이는 화면 전환 효과 적용"
 											data-src="./common/images/img-portfolio-list-view-24.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-24.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>현대로템 수소전기트램</span></p>
 													<p class="txt">수소전기트램 서비스 UI 구축 및 인터페이스 구현</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, rem 단위를 활용해 해상도에 따라 유연하게 대응할 수 있도록 작업을 진행했습니다. 다양한 화면 환경에서도 일관된 UI가 유지되도록 구성했고, 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 적용했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -351,23 +338,22 @@
 											data-performance="rem 단위를 적용해 다양한 해상도에서도 일관된 UI가 유지되도록 작업"
 											data-src="./common/images/img-portfolio-list-view-21.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-21.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>KG그룹</span></p>
 													<p class="txt">그룹사 통합 웹 UI 구축 및 퍼블리싱 리딩</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형 환경을 고려해 다양한 디바이스에서 동일한 흐름으로 이용이 가능하도록 UI를 구성했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 적용했습니다."
 											data-role="퍼블리싱 및 UI 개선 작업 / PL (일정 및 작업 조율)"
@@ -377,464 +363,442 @@
 											data-performance="반응형 환경에서도 일관된 이용 흐름을 유지할 수 있도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-01.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-01.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 														<p class="label position">PL 수행</p>
 													</div>
 													<p class="tit"><span>롯데문화센터</span></p>
 													<p class="txt">예약 시스템 중심 반응형 UI 구축 및 사용자 경험 개선</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형과 브라우저 호환을 고려해 다양한 환경에서 안정적으로 노출되도록 작업했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 											data-url="https://www.kapkorea.org/"
 											data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-23.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-23.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>KAP</span></p>
 													<p class="txt">서비스 운영 중심 UI 개선 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 											data-url="https://hyundaiplanh.com/main/index.do"
 											data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-22.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-22.jpg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>현대홈쇼핑GA</span></p>
 													<p class="txt">반응형 및 사용성 중심 UI 개선 및 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형과 브라우저 호환을 고려해 다양한 환경에서 안정적으로 노출되도록 작업했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 											data-url="https://www.kolon.com/kr/main"
 											data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-02.jpg">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-02.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>코오롱 그룹</span></p>
 													<p class="txt">반응형 및 사용성 중심 UI 개선 및 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 										data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형과 브라우저 호환을 고려해 다양한 환경에서 안정적으로 노출되도록 작업했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 										data-url="https://www.kolonindustries.com/kr/main"
 										data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 										data-src="./common/images/img-portfolio-list-view-03.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-03.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>코오롱 인더스트리</span></p>
 													<p class="txt">반응형 및 사용성 중심 UI 개선 및 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="항공, 호텔 등 다양한 예약 기능을 포함한 시스템으로, 여러 화면의 UI를 구현했습니다. 타사와 협업하며 서비스에 맞게 UI를 적용했고, 복잡한 구조에서도 사용자 흐름을 고려해 화면을 구성했습니다."
 											data-url=""
 											data-performance="다양한 예약 기능이 포함된 화면을 구현하며 복잡한 구조에서도 사용자 흐름이 끊기지 않도록 작업"
 											data-src="./common/images/img-portfolio-list-view-04.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-04.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
-														<p class="label no_show">내부망</p>
+														<p class="label no-show">내부망</p>
 													</div>
 													<p class="tit"><span>H-Biz</span></p>
 													<p class="txt">항공 &middot; 호텔 등 복합 예약 시스템 UI 구축 및 협업 수행</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list" 
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형과 브라우저 호환을 고려해 다양한 환경에서 안정적으로 노출되도록 작업했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 											data-url="https://www.hyundai-autoever.com/kor/main/index.do"
 											data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-05.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-05.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>현대오토에버</span></p>
 													<p class="txt">반응형 및 사용성 중심 UI 개선 및 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형과 브라우저 호환을 고려해 다양한 환경에서 안정적으로 노출되도록 작업했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 											data-url="https://www.lottecastle.co.kr/main/index.do"
 											data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-06.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-06.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>롯데캐슬</span></p>
 													<p class="txt">반응형 및 사용성 중심 UI 개선 및 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="디자인 시안을 기반으로 화면을 구현했으며, 반응형과 브라우저 호환을 고려해 다양한 환경에서 안정적으로 노출되도록 작업했습니다. 기획, 디자인, 개발자와 협업하며 실제 서비스에 맞게 UI를 적용했습니다."
 											data-url="https://www.tnkfactory.com/tnk/tnk.home.main"
 											data-performance="다양한 환경에서도 안정적으로 화면이 노출되도록 UI 구현"
 											data-src="./common/images/img-portfolio-list-view-07.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-07.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>TNK 팩토리</span></p>
 													<p class="txt">반응형 및 사용성 중심 UI 개선 및 퍼블리싱 작업</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="모바일 환경에 맞춰 화면을 구성했으며, 다양한 모바일 환경에서도 안정적으로 동작하도록 작업했고 기획, 개발과 협업하며 서비스에 맞게 적용했습니다."
 											data-url="https://www.soluny.com/main/index.do"
 											data-performance="모바일 환경에 맞는 UI 구성"
 											data-src="./common/images/img-portfolio-list-view-08.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-08.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label mobile">MOBILE</p>
 													</div>
 													<p class="tit"><span>대교 솔루니 독서토론논술</span></p>
 													<p class="txt">모바일 특화 UI 설계 및 퍼블리싱 최적화</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="PC 환경에 맞춰 화면을 구성했으며, 넓은 해상도를 고려해 정보가 효율적으로 배치되도록 UI를 구현했습니다. 브라우저 호환을 고려해 다양한 환경에서도 안정적으로 노출되도록 작업했고, 개발자와 협업하며 서비스에 맞게 적용했습니다."
 											data-url="https://bbm.hyundai.com/login/index.do"
 											data-performance="PC 환경에 맞게 정보가 효율적으로 전달될 수 있도록 UI 구성"
 											data-src="./common/images/img-portfolio-list-view-09.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-09.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 													</div>
 													<p class="tit"><span>현대상용특장차</span></p>
 													<p class="txt">PC 환경 중심 UI 구축 및 화면 최적화</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="적응형 방식으로 디바이스별 화면을 구성했으며, 환경에 따라 UI가 적절하게 노출되도록 작업했습니다. 각 해상도에 맞는 레이아웃을 적용해 사용성이 유지되도록 구성했고, 개발자와 협업하며 서비스에 맞게 적용했습니다."
 											data-url="https://gpc.hyundai.co.kr/gpc/main/index.do"
 											data-performance="디바이스별 환경에 맞는 화면 구성을 통해 사용성이 유지되도록 작업"
 											data-src="./common/images/img-portfolio-list-view-10.jpg"
 										>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-10.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 													</div>
 													<p class="tit"><span>현대글로벌상생협력센터</span></p>
 													<p class="txt">적응형 UI 기반 협력 플랫폼 퍼블리싱 구현</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="javascript:" class="list"
 											data-summary="금융 서비스 특성에 맞게 안정적인 화면 구성과 브라우저 호환을 고려해 작업을 진행했습니다."
 											data-url="https://www.jbfg.com/main/index.do"
 											data-performance="금융 서비스 환경에 맞게 안정적으로 화면이 노출되도록 작업"
 											data-src="./common/images/img-portfolio-list-view-11.jpg"
 											>
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img src="./common/images/img-portfolio-list-11.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>JB금융그룹</span></p>
 													<p class="txt">금융 서비스 UI 구축</p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="tab_con">
-								<div class="list_wrap scroll_motion">
-									<div class="list_div">
+							<div class="tab-con">
+								<div class="list-wrap scroll-motion">
+									<div class="list-div">
 										<a href="https://www.oilbank.co.kr/main/index.do" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-12.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 													</div>
 													<p class="tit"><span>현대오일뱅크</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="https://www.mobis.co.kr/kr/index.do" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-13.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>현대모비스</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="http://www.glovis.net/Kor/main/index.do" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-14.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>현대글로비스</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="https://connect.kia.com/kr/00_main/main.html" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-15.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 													</div>
 													<p class="tit"><span>KIA CONNECT(구 UVO)</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="http://ktr.or.kr/main/index.do" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-16.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 													</div>
 													<p class="tit"><span>KTR</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="https://www.farmhannong.com/kor/main/index.do" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-17.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>팜한농</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="https://www.seoulfc.or.kr/Main/" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-18.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label">반응형</p>
 													</div>
 													<p class="tit"><span>서울영상위원회</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="https://www.yuhan.co.kr/Main/" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-19.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 														<p class="label mobile">MOBILE</p>
 													</div>
 													<p class="tit"><span>유한양행</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
+									<div class="list-div">
 										<a href="http://oia.korea.ac.kr/main.do" target="_blank" class="list">
-											<div class="list_w">
-												<p class="img_area">
+											<div class="list-w">
+												<p class="img-area">
 													<img class="lazy" data-src="./common/images/img-portfolio-list-20.JPG" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
+												<div class="txt-div">
+													<div class="label-div">
 														<p class="label pc">PC</p>
 													</div>
 													<p class="tit"><span>고려대학교 국제처</span></p>
-													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
-										<a href="javascript:" class="list no_click">
-											<div class="list_w">
-												<p class="img_area no_img">
+									<div class="list-div">
+										<a href="javascript:" class="list no-click">
+											<div class="list-w">
+												<p class="img-area no-img">
 													<img class="lazy" data-src="./common/images/icon-no-img.svg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
-														<p class="label no_show">내부망</p>
+												<div class="txt-div">
+													<div class="label-div">
+														<p class="label no-show">내부망</p>
 													</div>
 													<p class="tit"><span>타사이트 뉴스레터</span></p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="list_div">
-										<a href="javascript:" class="list no_click">
-											<div class="list_w">
-												<p class="img_area no_img">
+									<div class="list-div">
+										<a href="javascript:" class="list no-click">
+											<div class="list-w">
+												<p class="img-area no-img">
 													<img class="lazy" data-src="./common/images/icon-no-img.svg" alt="">
 												</p>
-												<div class="txt_div">
-													<div class="label_div">
-														<p class="label no_show">내부망</p>
+												<div class="txt-div">
+													<div class="label-div">
+														<p class="label no-show">내부망</p>
 													</div>
 													<p class="tit"><span>코웨이 코러스</span></p>
 												</div>
@@ -843,255 +807,255 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab_con">
-								<p class="noti_txt">
+							<div class="tab-con">
+								<p class="noti-txt">
 									제안 프로젝트는 데스크톱 환경(1920 * 1080 기준)에 최적화되어 제작되었습니다.
 								</p>
-								<div class="list_wrap scroll_motion">
-									<div class="txt_list_div">
+								<div class="list-wrap scroll-motion">
+									<div class="txt-list-div">
 										<a href="./proposal/worldtaekwondo/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>세계태권도연맹</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/ssyenc/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>쌍용건설&더 플래티넘</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/ktng2024/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>KT&G</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/hyundaiGlovis/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>현대글로비스</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/miraeasset_investpool/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>미래에셋 연기금투자풀</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/HyundaiSteel/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>현대제철</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/hyundaiRobotics/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>현대로보틱스</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/hdhyundaies/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>현대에너지솔루션</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/miraeasset/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>미래에셋자산운용</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/ktoa/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>KTOA</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/HDhyundai/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>HD현대</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/HCE/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>HD현대건설기계</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/kap/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>KAP</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/celltrion_2023/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>셀트리온</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/daedong/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>대동</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/JSmedibio/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>자생메디바이오센터</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/transcosmos/index.html" target="_blank" class="list proposal">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>트랜스코스모스코리아</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/mobis_recruiter/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>모비스 채용</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/LCC/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>롯데문화센터</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/miraeasset_TIGERETF/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>미래에셋 TIGER ETF</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/kyochon/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>교촌</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/daebang/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>대방건설</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/semes/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>세메스</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/tk_chemi/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>티케이케미칼</span></p>
 													<p class="view">view more</p>
 												</div>
 											</div>
 										</a>
 									</div>
-									<div class="txt_list_div">
+									<div class="txt-list-div">
 										<a href="./proposal/kgc/index.html" target="_blank" class="list">
-											<div class="list_w">
-												<div class="txt_div">
+											<div class="list-w">
+												<div class="txt-div">
 													<p class="tit"><span>KGC인삼공사</span></p>
 													<p class="view">view more</p>
 												</div>
@@ -1106,11 +1070,11 @@
 			</section>
 
 			<!-- Tool section -->
-			<section class="tools_div scroll_motion">
+			<section class="tools-div scroll-motion">
 				<div class="inner">
-					<p class="big_title"><span>TOOLS</span></p>
-					<p class="sub_tit">HTML, CSS, SCSS, Javascript, Jquery를 활용한 UI 퍼블리싱 및 인터랙션 구현이 가능하며, <br />반응형 웹, 웹 접근성, 크로스 브라우징 환경에 대한 실무 경험을 보유하고 있습니다.</p>
-					<div class="tools_list">
+					<p class="big-title"><span>TOOLS</span></p>
+					<p class="sub-tit">HTML, CSS, SCSS, Javascript, Jquery를 활용한 UI 퍼블리싱 및 인터랙션 구현이 가능하며, <br />반응형 웹, 웹 접근성, 크로스 브라우징 환경에 대한 실무 경험을 보유하고 있습니다.</p>
+					<div class="tools-list">
 						<div class="tools">
 							<p class="border">
 								<span class="icon"><img src="./common/images/icon-figma.png" alt=""></span>
@@ -1142,25 +1106,25 @@
 				</div>
 			</footer>
 
-			<a class="btn_top" href="javascript:" title="페이지 상단으로 이동">
+			<button type="button" class="btn-top" title="페이지 상단으로 이동">
 				<svg>
-					<circle class="svg_circle" id="top_svg_circle" cx="25" cy="25" r="21" stroke="#2EB7BD" stroke-width="2" fill="none"></circle>
+					<circle class="svg-circle" id="top_svg-circle" cx="25" cy="25" r="21" stroke="#2EB7BD" stroke-width="2" fill="none"></circle>
 				</svg>
 				<span>TOP</span>
-			</a>
+			</button>
 
 			<!-- 공통 팝업 -->
-			<div class="list_pop">
-				<div class="pop_wrap">
-					<div class="pop_head">
+			<div class="list-pop">
+				<div class="pop-wrap">
+					<div class="pop-head">
 						<p class="title"></p>
 					</div>
-					<div class="pop_cont">
-						<div class="for_padding">
-							<div class="scroll_area">
-								<a href="javascript:" target="_blank" class="view_site"><span>View site</span></a>
-								<a href="javascript:" target="_blank" class="view_repo"><span>View Github</span></a>
-								<div class="con_txt">
+					<div class="pop-cont">
+						<div class="for-padding">
+							<div class="scroll-area">
+								<a target="_blank" class="view-site"><span>View site</span></a>
+								<a target="_blank" class="view-repo"><span>View Github</span></a>
+								<div class="con-txt">
 									<p class="txt summary">
 										<span>프로젝트 개요 : </span>
 										<span class="data"></span></p>
@@ -1186,7 +1150,7 @@
 							</div>
 						</div>
 					</div>
-					<a class="btn_close" href="javascript:" title="닫기"></a>
+					<button type="button" class="btn-close" title="닫기"></button>
 				</div>
 			</div>
 

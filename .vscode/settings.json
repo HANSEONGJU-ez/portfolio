@@ -1,5 +1,6 @@
 {
   "liveServer.settings.port": 5513,
+  "task.allowAutomaticTasks": "on",
   "scss.validate": false,
   "css.validate": false,
   "stylelint.validate": ["css", "scss"],

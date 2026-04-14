@@ -940,9 +940,13 @@ section {
           background-color: #979797;
         }
 
-        .view-site {
-          display: inline-block;
+        .view-site, .view-repo {
+          display: inline-flex;
           margin-bottom: 20px;
+
+          &:first-child {
+            margin-right: 20px;
+          }
 
           span {
             padding-right: 25px;

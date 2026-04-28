@@ -133,51 +133,60 @@ var commonScript = (function(){
       // 팝업
       $("section .tab-con-area .list-wrap .list").each(function(){
         $(this).on("click", function(){
-          if(!$(this).hasClass("no-click") && !$(this).hasClass("proposal")){
-            $(this).find(".label").each(function(){
-              if($(this).hasClass("no-show")){
-                if($(this).text() == "진행중"){
-                  $(".list-pop .con-txt").append("<p class='txt'>현재 <span class='red-txt'>진행중</span>으로 사이트 확인이 <span class='red-txt'>불가</span>합니다.</p>")
-                }else if($(this).text() == "내부망"){
-                  $(".list-pop .con-txt").append("<p class='txt'><span class='red-txt'>내부망</span>으로 인하여 사이트 확인이 <span class='red-txt'>불가</span>합니다.</p>")
-                }else if($(this).text() == "미오픈"){
-                  $(".list-pop .con-txt").append("<p class='txt'><span class='red-txt'>미오픈</span>으로 인하여 사이트 확인이 <span class='red-txt'>불가</span>합니다.</p>")
-                }
-                $(".list-pop .view-site").hide();
-              }
-            });
-            $("body").addClass("stop-scroll");
-            $(".list-pop .pop-wrap .pop-head .title").text($(this).find(".tit span").text());
-            if(!$(this).data("url")){
-              $(".list-pop .view-site").hide();
-            } else {
-              $(".list-pop .view-site").attr("href", $(this).data("url"));
-            }
-            $(".list-pop .img img").attr("src", $(this).data("src"));
-            $(".list-pop .view-repo").attr("href", $(this).data("repo"));
-            $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .summary .data").text($(this).data("summary"));
-            $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .performance .data").text($(this).data("performance"));
-            $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .role .data").text($(this).data("role"));
-            $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .skill .data").text($(this).data("skill"));
-            $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .contribution .data").text($(this).data("contribution"));
-            $(".list-pop").fadeIn();
-            popupResize();
-            if(!$(this).data("role")){
-              $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .role").remove();
-              $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .skill").remove();
-              $(".list-pop .pop-wrap .pop-cont .for-padding .scroll-area .con-txt .contribution").remove();
-            }else if(!$(this).data("repo")){
-              $(".list-pop .view-repo").remove()
-            }
+          if($(this).hasClass("no-click") || $(this).hasClass("proposal")) return;
+
+          var $list = $(this);
+          var $pop = $(".list-pop");
+          var $conTxt = $pop.find(".con-txt");
+
+          // 이전 상태 초기화
+          $pop.find(".view-site, .view-repo").show();
+          $conTxt.find(".role, .skill, .contribution").show();
+          $conTxt.find(".no-show-msg").remove();
+
+          // 데이터 바인딩
+          $pop.find(".pop-head .title").text($list.find(".tit span").text());
+          $pop.find(".img img").attr("src", $list.data("src"));
+          $pop.find(".view-site").attr("href", $list.data("url"));
+          $pop.find(".view-repo").attr("href", $list.data("repo"));
+          $conTxt.find(".summary .data").text($list.data("summary") || "");
+          $conTxt.find(".performance .data").text($list.data("performance") || "");
+          $conTxt.find(".role .data").text($list.data("role") || "");
+          $conTxt.find(".skill .data").text($list.data("skill") || "");
+          $conTxt.find(".contribution .data").text($list.data("contribution") || "");
+
+          // 데이터 없는 항목 숨김 처리
+          if(!$list.data("url")) $pop.find(".view-site").hide();
+          if(!$list.data("repo")) $pop.find(".view-repo").hide();
+          if(!$list.data("role")){
+            $conTxt.find(".role, .skill, .contribution").hide();
           }
+
+          // no-show 라벨 안내 메시지
+          $list.find(".label.no-show").each(function(){
+            var labelText = $(this).text();
+            var msg = "";
+            if(labelText == "진행중"){
+              msg = "현재 <span class='red-txt'>진행중</span>으로 사이트 확인이 <span class='red-txt'>불가</span>합니다.";
+            } else if(labelText == "내부망"){
+              msg = "<span class='red-txt'>내부망</span>으로 인하여 사이트 확인이 <span class='red-txt'>불가</span>합니다.";
+            } else if(labelText == "미오픈"){
+              msg = "<span class='red-txt'>미오픈</span>으로 인하여 사이트 확인이 <span class='red-txt'>불가</span>합니다.";
+            }
+            if(msg) $conTxt.append("<p class='txt no-show-msg'>" + msg + "</p>");
+            $pop.find(".view-site").hide();
+          });
+
+          $("body").addClass("stop-scroll");
+          $pop.fadeIn();
+          popupResize();
         });
       });
 
       // 팝업 닫기
       $(".list-pop .pop-wrap .btn-close").on("click", function(){
         $(this).parents(".list-pop").fadeOut(300, function(){
-          $(".list-pop .view-site").show();
-          $(".list-pop .img img").attr("src", "")
+          $(".list-pop .img img").attr("src", "");
         });
         $("body").removeClass("stop-scroll");
       });
